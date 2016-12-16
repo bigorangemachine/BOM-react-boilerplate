@@ -1,7 +1,11 @@
 www-assets/js/bundle.js
 www-assets/js/bundle.js.map
+www-assets/js/bundle.min.js
 www-assets/js/bundle.min.js.map
-
+www-assets/css/css.css
+www-assets/css/css.css.map
+www-assets/css/css.min.css
+www-assets/css/css.min.css.map
 
 # Logs
 logs
