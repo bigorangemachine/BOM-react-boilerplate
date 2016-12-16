@@ -1,3 +1,8 @@
+www-assets/js/bundle.js
+www-assets/js/bundle.js.map
+www-assets/js/bundle.min.js.map
+
+
 # Logs
 logs
 *.log
