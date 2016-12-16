@@ -3,6 +3,12 @@
   "version": "0.0.0",
   "description": "Demo Project - React/Webpack",
   "main": "index.js",
+  "author": "BigOrangeMachine",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigorangemachine/BOM-react-boilerplate.git"
+  },
   "scripts": {
     "build": "webpack",
     "watch": "./node_modules/.bin/webpack -d --watch"

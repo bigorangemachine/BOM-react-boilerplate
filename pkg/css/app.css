@@ -1,7 +1,13 @@
-html{font-size:10px;}
+html{
+    /* REM READY */
+    font-size:10px;
+}
 html,body{
     padding:0px;
     margin:0px;
+}
+body{
     height:100%;
     width:100%;
+    font-size:3rem;
 }
