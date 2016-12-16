@@ -21,18 +21,10 @@ var config = {
             {
                 'test': /\.css$/,//allow nodejs to use css without a prefix - otherwise require('css!./../css/app.css');
                 'loader': ExtractTextPlugin.extract('style', 'css')
-                /*,
-                'include': APP_DIR + 'css'*/
             },
-            // {
-            //     'test': /\.scss$/,//allow nodejs to use sass without a prefix?
-            //     'loaders': ['style-loader', 'css-loader?sourceMap', 'sass-loader?sourceMap']/*,
-            //     'include': APP_DIR + 'scss' //not needed?*/
-            // }
             {
                 'test': /\.scss$/,//allow nodejs to use sass without a prefix?
-                'loader': ExtractTextPlugin.extract('css-loader!sass-loader'),
-                //'include': APP_DIR + 'scss' //not needed?
+                'loader': ExtractTextPlugin.extract('css-loader!sass-loader')
             }
         ]},
         'plugins': [new ExtractTextPlugin('css/css.css')]
