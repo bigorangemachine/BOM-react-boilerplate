@@ -4,8 +4,3 @@ Following tutorial at https://www.codementor.io/tamizhvendan/tutorials/beginner-
 Phase 1:
 
 Bundle CSS so its available to require.js (import/require())
-
-
-Phase 2:
-
-Build CSS to its own directory
