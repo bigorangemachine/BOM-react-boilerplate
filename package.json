@@ -1,0 +1,28 @@
+{
+  "name": "react-webpack",
+  "version": "0.0.0",
+  "description": "Demo Project - React/Webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "./node_modules/.bin/webpack -d --watch"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "webpack": "^1.12.8"
+  },
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^4.0.0",
+    "sass-loader": "^4.1.0",
+    "style-loader": "^0.13.1"
+  }
+}

@@ -1,0 +1,20 @@
+/*
+html,body{
+    padding:0px;
+    margin:0px;
+    height:100%;
+    width:100%;
+    font-size:10px;
+}
+*/
+.testclass{
+    .nottest{font-size:20px;}
+}
+.red{
+    .blue{
+        color:blue;
+        .red{
+            color:#f00;
+        }
+    }
+}
