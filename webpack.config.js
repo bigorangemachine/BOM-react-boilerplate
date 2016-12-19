@@ -6,7 +6,7 @@ var BUILD_DIR = path.resolve(__dirname, './www-assets/'),
     APP_DIR = path.resolve(__dirname, './pkg/');
 
 var config = {
-        //'devtool': "source-map", // source-map|inline-source-map -> not needed?
+        'devtool': "source-map", // source-map|inline-source-map -> not needed?
         'entry': APP_DIR + '/jsxpkg/index.jsx', // this can be a hastable  with arrays {'something': [ ... ], 'soemthing-else': [ ... ] }
         'output': {
             'path': BUILD_DIR,
