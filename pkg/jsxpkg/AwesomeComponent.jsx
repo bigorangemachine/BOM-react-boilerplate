@@ -10,7 +10,7 @@ class AwesomeComponent extends React.Component {
 
   onLike () {
     let newLikesCount = this.state.likesCount + 1;
-    this.setState({likesCount: newLikesCount});
+    this.setState({'likesCount': newLikesCount});
   }
 
   render() {
