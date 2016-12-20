@@ -5,6 +5,7 @@ var argv = require('yargs').argv,
     ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var PROCESS_BIN = _.last(argv['$0'].split(/(\/|\\)/)).toLowerCase(),//if you don't want to use yargs you can use process.argv[1] - but test for yourself :)
+    RUNNING_TEST = (PROCESS_BIN.indexOf('mocha-webpack') === 0?true:false),
     BUILD_DIR = path.resolve(__dirname, './www-assets/'),
     APP_DIR = path.resolve(__dirname, './pkg/');
 
@@ -34,13 +35,14 @@ var config = {
             new ExtractTextPlugin('css/css.css')//where to put all the css
         ]
     };
+
 //test mode!
-if(PROCESS_BIN.indexOf('mocha-webpack') === 0){//we've been executed through the npm run test (of some sort)
+if(RUNNING_TEST){//we've been executed through the npm run test (of some sort)
+    //var IstanbulPlugin = require('babel-istanbul-instrumenter-loader');
     config.target = 'node';// in order to ignore built-in modules like path, fs, etc.
     if(typeof(config.externals)!=='object'){config.externals=[];}
     config.externals.push(require('webpack-node-externals')());// in order to ignore all modules in node_modules folder
 
-    //config.set({'frameworks': ['mocha', 'chai', 'sinon']});
 
 }
 
