@@ -1,5 +1,6 @@
 www-assets/js/*
 www-assets/css/*
+test-coverage
 
 # Logs
 logs
