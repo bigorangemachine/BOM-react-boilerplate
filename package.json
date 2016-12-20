@@ -23,7 +23,6 @@
     "babel-preset-react": "^6.1.18",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "^1.0.1",
-    "merge": "^1.2.0",
     "minireset.css": "0.0.2",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
@@ -40,7 +39,6 @@
     "jsdom": "^9.9.1",
     "jsdom-global": "^2.1.0",
     "mocha": "^3.2.0",
-    "mocha-jsdom": "^1.1.0",
     "mocha-webpack": "^0.7.0",
     "react-shallow-testutils": "^2.0.0",
     "webpack-node-externals": "^1.5.4"

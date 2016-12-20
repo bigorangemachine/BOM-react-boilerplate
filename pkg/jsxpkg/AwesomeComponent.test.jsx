@@ -7,7 +7,7 @@ import assert from 'assert';
 import ReactDOM from "react-dom";
 import TestUtils from "react-addons-test-utils";
 import shallowTestUtils from "react-shallow-testutils";
-// import jsdom from 'mocha-jsdom';
+
 // I got error  document is not defined
 // Resolved with help with - http://rvcode.com/scripting%20languages/2016/01/01/testing-react-js-isomorphic-components.html
 
