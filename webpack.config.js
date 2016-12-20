@@ -30,10 +30,12 @@ var config = {
                 'loader': ExtractTextPlugin.extract('css-loader?sourceMap!sass-loader?sourceMap')
             }
         ]},
-        'plugins': [new ExtractTextPlugin('css/css.css')]
+        'plugins': [
+            new ExtractTextPlugin('css/css.css')//where to put all the css
+        ]
     };
 //test mode!
-if(PROCESS_BIN.indexOf('mocha-webpack') === 0){
+if(PROCESS_BIN.indexOf('mocha-webpack') === 0){//we've been executed through the npm run test (of some sort)
     config.target = 'node';// in order to ignore built-in modules like path, fs, etc.
     if(typeof(config.externals)!=='object'){config.externals=[];}
     config.externals.push(require('webpack-node-externals')());// in order to ignore all modules in node_modules folder

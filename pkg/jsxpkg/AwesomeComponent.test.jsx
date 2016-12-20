@@ -14,9 +14,9 @@ import shallowTestUtils from "react-shallow-testutils";
 //
 // console.log("ReactDOM", ReactDOM);
 //
-// var renderer = TestUtils.renderIntoDocument(<AwesomeComponent/>);
+var renderer = TestUtils.renderIntoDocument(<AwesomeComponent/>);
 // var finded=TestUtils.findRenderedDOMComponentWithTag(renderer, 'button');
-// console.log("renderer", finded);
+console.log("renderer", renderer);
 describe('Array', function() {
     describe('#indexOf()', function() {
         it('should return -1 when the value is not present', function() {
