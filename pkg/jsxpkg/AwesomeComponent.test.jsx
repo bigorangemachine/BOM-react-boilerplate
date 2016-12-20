@@ -8,15 +8,14 @@ import ReactDOM from "react-dom";
 import TestUtils from "react-addons-test-utils";
 import shallowTestUtils from "react-shallow-testutils";
 // import jsdom from 'mocha-jsdom';
-//
-//
-//
-//
-// console.log("ReactDOM", ReactDOM);
-//
+// I got error  document is not defined
+// Resolved with help with - http://rvcode.com/scripting%20languages/2016/01/01/testing-react-js-isomorphic-components.html
+
+
 var renderer = TestUtils.renderIntoDocument(<AwesomeComponent/>);
 // var finded=TestUtils.findRenderedDOMComponentWithTag(renderer, 'button');
-console.log("renderer", renderer);
+// console.log("renderer", renderer,"\nfinded: ",finded);
+
 describe('Array', function() {
     describe('#indexOf()', function() {
         it('should return -1 when the value is not present', function() {
@@ -32,11 +31,16 @@ describe('Array', function() {
 });
 
 describe('AwesomeComponent', function() {
-    //TestUtils.renderIntoDocument(renderer);
-    //TestUtils.Simulate.click(renderer);
-    //renderer.onLike();
+    it('likesCount should be 0 (uninitiated)', function() {
+        assert.equal(0, renderer.state.likesCount);
+    });
 
-    it('should 1', function() {
-        assert.equal(1, 1);
+    describe('AwesomeComponent - onLike Increment', function() {
+        before(function(){
+            renderer.onLike();
+        });
+        it('likesCount should be 1 (initiated)', function() {
+            assert.equal(1, renderer.state.likesCount);
+        });
     });
 });
