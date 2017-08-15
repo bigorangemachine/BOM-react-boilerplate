@@ -3,6 +3,10 @@
   "env": {
     "test": {
       "plugins": [ "istanbul" ]
+    },
+    "test-debug": {
+      "plugins": [ "istanbul" ]
     }
-  }
+  },
+  "sourceMaps": true
 }
